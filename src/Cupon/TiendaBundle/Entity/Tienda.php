@@ -2,6 +2,7 @@
 
 namespace Cupon\TiendaBundle\Entity;
 
+use Cupon\OfertaBundle\Util\Util;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -66,16 +67,15 @@ class Tienda
     /**
      * @var string
      *
-     * @ORM\Column(name="dereccion", type="text")
+     * @ORM\Column(name="direccion", type="text")
      */
     protected $direccion;
 
-    /*
+    /**
      * @ORM\ManyToOne(targetEntity="Cupon\CiudadBundle\Entity\Ciudad")
      * @ORM\JoinColumn(name="ciudad_id", referencedColumnName="id")
      */
     protected $ciudad;
-
 
     /**
      * Get id
@@ -96,6 +96,7 @@ class Tienda
     public function setNombre($nombre)
     {
         $this->nombre = $nombre;
+        $this->slug = Util::getSlug($nombre);
 
         return $this;
     }
@@ -226,14 +227,14 @@ class Tienda
     }
 
     /**
-     * Set dereccion
+     * Set direccion
      *
      * @param string $direccion
      * @return Tienda
      */
-    public function setDireccion($dereccion)
+    public function setDireccion($direccion)
     {
-        $this->dereccion = $dereccion;
+        $this->direccion = $direccion;
 
         return $this;
     }
@@ -248,8 +249,6 @@ class Tienda
         return $this->direccion;
     }
 
-    /* Metodo magico */
-
 
     public function setCiudad(\Cupon\CiudadBundle\Entity\Ciudad $ciudad)
     {
@@ -263,6 +262,7 @@ class Tienda
     }
 
     /* Metodos magicos */
+
     public function __toString()
     {
         return $this->getNombre();

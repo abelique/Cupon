@@ -19,89 +19,89 @@ class Usuario
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected $id;
 
     /**
      * @var string
      *
      * @ORM\Column(name="nombre", type="string", length=100)
      */
-    private $nombre;
+    protected $nombre;
 
     /**
      * @var string
      *
      * @ORM\Column(name="apellidos", type="string", length=255)
      */
-    private $apellidos;
+    protected $apellidos;
 
     /**
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255)
      */
-    private $email;
+    protected $email;
 
     /**
      * @var string
      *
      * @ORM\Column(name="password", type="string", length=255)
      */
-    private $password;
+    protected $password;
 
     /**
      * @var string
      *
      * @ORM\Column(name="salt", type="string", length=255)
      */
-    private $salt;
+    protected $salt;
 
     /**
      * @var string
      *
      * @ORM\Column(name="direccion", type="text")
      */
-    private $direccion;
+    protected $direccion;
 
     /**
      * @var boolean
      *
      * @ORM\Column(name="permite_email", type="boolean")
      */
-    private $permiteEmail;
+    protected $permiteEmail;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="fecha_alta", type="datetime")
      */
-    private $fechaAlta;
+    protected $fechaAlta;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="fecha_nacimiento", type="datetime")
      */
-    private $fechaNacimiento;
+    protected $fechaNacimiento;
 
     /**
      * @var string
      *
      * @ORM\Column(name="dni", type="string", length=9)
      */
-    private $dni;
+    protected $dni;
 
     /**
      * @var string
      *
      * @ORM\Column(name="numero_tarjeta", type="string", length=20)
      */
-    private $numeroTarjeta;
+    protected $numeroTarjeta;
 
     /**
      * @ORM\ManyToOne(targetEntity="Cupon\CiudadBundle\Entity\Ciudad")
      */
-    private $ciudad;
+    protected $ciudad;
 
     /*********************** CONSTRUCTOR DE LA CLASE  ***************************/
     public function __construct()

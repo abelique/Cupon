@@ -24,6 +24,10 @@ framework:
     fragments:       ~
     http_method_override: true
 
+# Parameters global configuration
+parameters:
+    cupon.ciudad_por_defecto: '1'
+
 # Twig Configuration
 twig:
     debug:            "%kernel.debug%"

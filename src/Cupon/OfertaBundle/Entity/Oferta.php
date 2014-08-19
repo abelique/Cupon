@@ -2,6 +2,7 @@
 
 namespace Cupon\OfertaBundle\Entity;
 
+use Cupon\OfertaBundle\Util\Util;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,103 +20,101 @@ class Oferta
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected $id;
 
     /**
      * @var string
      *
      * @ORM\Column(name="nombre", type="string", length=255)
      */
-    private $nombre;
+    protected $nombre;
 
     /**
      * @var string
      *
      * @ORM\Column(name="slug", type="string", length=255)
      */
-    private $slug;
+    protected $slug;
 
     /**
      * @var string
      *
      * @ORM\Column(name="descripcion", type="text")
      */
-    private $descripcion;
+    protected $descripcion;
 
     /**
      * @var string
      *
      * @ORM\Column(name="condiciones", type="text")
      */
-    private $condiciones;
+    protected $condiciones;
 
     /**
      * @var string
      *
      * @ORM\Column(name="ruta_foto", type="string", length=255)
      */
-    private $rutaFoto;
+    protected $rutaFoto;
 
     /**
      * @var string
      *
      * @ORM\Column(name="precio", type="decimal")
      */
-    private $precio;
+    protected $precio;
 
     /**
      * @var string
      *
      * @ORM\Column(name="descuento", type="decimal")
      */
-    private $descuento;
+    protected $descuento;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="fecha_publicacion", type="datetime")
      */
-    private $fechaPublicacion;
+    protected $fechaPublicacion;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="fecha_expiracion", type="datetime")
      */
-    private $fechaExpiracion;
+    protected $fechaExpiracion;
 
     /**
      * @var integer
      *
      * @ORM\Column(name="compras", type="integer")
      */
-    private $compras;
+    protected $compras;
 
     /**
      * @var integer
      *
      * @ORM\Column(name="umbral", type="integer")
      */
-    private $umbral;
+    protected $umbral;
 
     /**
      * @var boolean
      *
      * @ORM\Column(name="revisada", type="boolean")
      */
-    private $revisada;
+    protected $revisada;
 
     /**
-     * @var string
-     *
      * @ORM\ManyToOne(targetEntity="Cupon\CiudadBundle\Entity\Ciudad")
      */
-    private $ciudad;
+    protected $ciudad;
 
     /**
-     *@ORM\ManyToOne(targetEntity="Cupon\TiendaBundle\Entity\Tienda")
+     * @ORM\ManyToOne(targetEntity="Cupon\TiendaBundle\Entity\Tienda")
      */
-    private $tienda;
+    protected $tienda;
 
 
     /**
@@ -137,6 +136,7 @@ class Oferta
     public function setNombre($nombre)
     {
         $this->nombre = $nombre;
+        $this->slug = Util::getSlug($nombre);
 
         return $this;
     }

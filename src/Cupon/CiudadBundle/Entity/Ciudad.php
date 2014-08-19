@@ -2,6 +2,7 @@
 
 namespace Cupon\CiudadBundle\Entity;
 
+use Cupon\OfertaBundle\Util\Util;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,21 +20,21 @@ class Ciudad
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    protected  $id;
+    protected $id;
 
     /**
      * @var string
      *
      * @ORM\Column(name="nombre", type="string", length=100)
      */
-    protected  $nombre;
+    protected $nombre;
 
     /**
      * @var string
      *
      * @ORM\Column(name="slug", type="string", length=100)
      */
-    protected  $slug;
+    protected $slug;
 
 
     /**
@@ -55,6 +56,7 @@ class Ciudad
     public function setNombre($nombre)
     {
         $this->nombre = $nombre;
+        $this->slug = Util::getSlug($nombre);
 
         return $this;
     }

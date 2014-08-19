@@ -18,19 +18,19 @@ class Venta
      *
      * @ORM\Column(name="fecha", type="datetime")
      */
-    private $fecha;
+    protected $fecha;
 
     /**
      *@ORM\Id
      * @ORM\ManyToOne(targetEntity="Cupon\OfertaBundle\Entity\Oferta")
      */
-    private $oferta;
+    protected $oferta;
 
     /**
      *@ORM\Id
      * @ORM\ManyToOne(targetEntity="Cupon\UsuarioBundle\Entity\Usuario")
      */
-    private $usuario;
+    protected $usuario;
 
 
     /**
