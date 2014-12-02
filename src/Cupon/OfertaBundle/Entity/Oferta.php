@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Oferta
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Cupon\OfertaBundle\Entity\OfertaRepository")
  */
 class Oferta
 {

@@ -20,11 +20,32 @@ pagina_estatica:
     defaults: { _controller:OfertaBundle:Sitio:estatica }
 
 # Ruta completa de la portada (con el slug de la ciudad)
-portada:
-    path:   /
-    defaults: { _controller:OfertaBundle:Default:portada }
+#_portada:
+#    path:   /
+#    defaults: { _controller:FrameworkBundle:Redirect:redirect,
+#                route: portada, ciudad: '%cupon.ciudad_por_defecto%' }
+
+#_portada: # Cuando se quiere mandar a una url normalmente externa.
+#    pattern: /
+#    defaults:
+#        _controller: FrameworkBundle:Redirect:urlRedirect
+#        route: portada
+#        path: /{ciudad: '%cupon.ciudad_por_defecto%'} #Por ejemplo: google.es
+
+_portada: #el pattern es muy importante para que funcione
+    pattern: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: portada
+        ciudad: 'barcelona'
+        permanent: true
 
 # Ruta simple de la portada
-_portada:
+portada:
     path:  /{ciudad}
-    defaults: { _controller:OfertaBundle:Default:portada }
+    defaults: { _controller: OfertaBundle:Default:portada, ciudad: null }
+
+oferta:
+  path:   /{ciudad}/ofertas/{slug}
+  defaults: { _controller: OfertaBundle:Default:oferta }
+
