@@ -7,3 +7,4 @@ ciudad_cambiar:
     defaults: { _controller: CiudadBundle:Default:Cambiar }
     requirements:
         ciudad: .+
+# Con .+ le indicamos que el nombre de ciudad puede contener cualquier carácter

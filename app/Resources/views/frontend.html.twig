@@ -16,12 +16,13 @@
         : ciudad_por_defecto %}
 {% block body %}
     <header>
-        <h1><a href="{{ path('portada', { 'ciudad': ciudadSeleccionada }) }}">CUPON</a></h1>
+        <h1><a href="{{ path('portada') }}">CUPON</a></h1>
         <nav>
             <ul>
                 <li><a href="{{ path('portada') }}">Oferta del día</a></li>
                 <li><a href="#">Ofertas recientes</a></li>
                 <li><a href="#">Mis ofertas</a></li>
+                <li>{{ render(controller('CiudadBundle:Default:listaCiudades')) }}</li>
             </ul>
         </nav>
     </header>
