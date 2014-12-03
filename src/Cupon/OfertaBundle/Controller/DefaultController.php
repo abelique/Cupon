@@ -33,11 +33,9 @@ class DefaultController extends Controller
     }
 
     public function tipoNavegadorAction()
-    {
-        $peticion = $this->getRequest();
-        $nav = $peticion->server->get('HTTP_USER_AGENT');
-
-        return new Response("Su navegador es: " . $nav );
+    {  // PROBANDO PARAMS DE REQUEST, MUY INTERESANTE, ADEMÁS EN UNA LINEA.
+        return new Response("Su navegador es: "
+            . $this->getRequest()->server->get('HTTP_USER_AGENT') );
     }
 
     public function ofertaAction($ciudad, $slug){
