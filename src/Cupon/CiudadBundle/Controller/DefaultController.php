@@ -18,11 +18,12 @@ class DefaultController extends Controller
         //return new Response('Nos cambiamos a esta ciudad: ' . $ciudad);
     }
 
-    public function listaCiudadesAction(){
+    public function listaCiudadesAction($ciudad){
         $em = $this->getDoctrine()->getManager();
         $ciudades = $em->getRepository('CiudadBundle:Ciudad')->findAll();
         return $this->render('CiudadBundle:Default:listaCiudades.html.twig',
             array(
+                'ciudadActual'       => $ciudad,
                 'ciudades'     => $ciudades));
     }
 

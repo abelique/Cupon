@@ -7,8 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/CiudadBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Cupon/CiudadBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/views/Default/listaCiudades.html.twig" afterPath="$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/views/Default/listaCiudades.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cupon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="frontend.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="frontend.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="77" selection-start="971" selection-end="971" vertical-scroll-proportion="-16.8" vertical-offset="0" max-vertical-offset="840">
+            <state line="25" column="22" selection-start="995" selection-end="995" vertical-scroll-proportion="0.63100964" vertical-offset="0" max-vertical-offset="861">
               <folding />
             </state>
           </provider>
@@ -43,7 +41,7 @@
       <file leaf-file-name="listaCiudades.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/views/Default/listaCiudades.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="336" selection-end="336" vertical-scroll-proportion="-6.3" vertical-offset="0" max-vertical-offset="546">
+            <state line="4" column="49" selection-start="158" selection-end="158" vertical-scroll-proportion="-2.8" vertical-offset="0" max-vertical-offset="567">
               <folding />
             </state>
           </provider>
@@ -58,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/CiudadBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="40" selection-start="663" selection-end="663" vertical-scroll-proportion="0.46153846" vertical-offset="0" max-vertical-offset="819">
+            <state line="25" column="29" selection-start="922" selection-end="922" vertical-scroll-proportion="-16.1" vertical-offset="0" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -168,9 +166,9 @@
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/views/Default/portada.html.twig" />
         <option value="$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/views/Default/listaCiudades.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend.html.twig" />
         <option value="$PROJECT_DIR$/src/Cupon/CiudadBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/views/Default/listaCiudades.html.twig" />
       </list>
     </option>
   </component>
@@ -838,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="54" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="1197">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="79" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
@@ -866,23 +857,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/views/Default/listaCiudades.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="336" selection-end="336" vertical-scroll-proportion="-6.3" vertical-offset="0" max-vertical-offset="546">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="77" selection-start="971" selection-end="971" vertical-scroll-proportion="-16.8" vertical-offset="0" max-vertical-offset="840">
+        <state line="49" column="54" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="1197">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/CiudadBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="40" selection-start="663" selection-end="663" vertical-scroll-proportion="0.46153846" vertical-offset="0" max-vertical-offset="819">
+        <state line="25" column="29" selection-start="922" selection-end="922" vertical-scroll-proportion="-16.1" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/CiudadBundle/Resources/views/Default/listaCiudades.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="49" selection-start="158" selection-end="158" vertical-scroll-proportion="-2.8" vertical-offset="0" max-vertical-offset="567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="22" selection-start="995" selection-end="995" vertical-scroll-proportion="0.63100964" vertical-offset="0" max-vertical-offset="861">
           <folding />
         </state>
       </provider>
