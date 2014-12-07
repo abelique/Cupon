@@ -46,6 +46,10 @@ portada:
     defaults: { _controller: OfertaBundle:Default:portada, ciudad: null }
 
 oferta:
-  path:   /{ciudad}/ofertas/{slug}
-  defaults: { _controller: OfertaBundle:Default:oferta }
+    path:   /{ciudad}/ofertas/{slug}
+    defaults: { _controller: OfertaBundle:Default:oferta }
+
+prueba:
+    path:   /{ciudad}/{ruta_foto}
+    defaults: { _controller: OfertaBundle:Default:prueba }
 

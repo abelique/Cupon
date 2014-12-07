@@ -51,4 +51,18 @@ class OfertaRepository extends EntityRepository {
         return $consulta->getSingleResult();
     }
 
+    public function findOfertaRuta($ciudad, $ruta_foto){
+        $em = $this->getEntityManager();
+        $consulta = $em->createQuery('SELECT o, c, t
+        FROM OfertaBundle:Oferta o
+        JOIN o.ciudad c
+        JOIN o.tienda t
+        WHERE o.rutaFoto = :ruta
+        AND  c.slug = :ciudad
+        ');
+        $consulta->getParameter('ruta', $ruta_foto);
+        $consulta->getParameter('ciudad', $ciudad);
+        return $consulta->getResult();
+    }
+
 } 

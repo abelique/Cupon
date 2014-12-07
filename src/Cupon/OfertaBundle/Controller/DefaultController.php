@@ -44,6 +44,13 @@ class DefaultController extends Controller
         return $this->render('OfertaBundle:Default:detalle.html.twig', array(
             'oferta' => $oferta
         ));
+        //return new Response('Hasa aquí llega la ejecución...');
+    }
+    //---------- Una función para probar el lenguaje de consultas Doctrine DQL -------------//
+    public function pruebaAction($ciudad, $ruta_foto){
+        $em = $this->getDoctrine()->getManager();
+        $ofertas = $em->getRepository('OfertaBundle:Oferta')->findOfertaRuta($ciudad, $ruta_foto);
+        return new Response('Hasta aqui la consulta de la función prueba.....');
     }
 
 }//fin de la clase

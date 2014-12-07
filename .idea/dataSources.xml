@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3136322081">
+    <data-source source="LOCAL" name="MySQL - cupon@localhost" uuid="94c419ca-d9e1-48cc-abd7-9a39875a2b28">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/cupon</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfcbdfc8dfcfdfc6dfc3dfdbdfdfdfcf</user-password>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+      </driver-properties>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
