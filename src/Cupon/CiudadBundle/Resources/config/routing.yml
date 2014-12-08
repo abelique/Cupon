@@ -3,7 +3,7 @@ ciudad_homepage:
     defaults: { _controller: CiudadBundle:Default:index }
 
 ciudad_cambiar:
-    pattern:     /ciudad/cambiar-a-{ciudad}
+    pattern:  /ciudad/cambiar-a-{ciudad}
     defaults: { _controller: CiudadBundle:Default:Cambiar }
     requirements:
         ciudad: .+

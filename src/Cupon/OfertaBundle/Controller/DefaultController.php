@@ -17,8 +17,9 @@ class DefaultController extends Controller
         $oferta = $em->getRepository('OfertaBundle:Oferta')->findOneBy(array(
               'ciudad' => $ciudad?$ciudad->getId():$this->container->getParameter('cupon.ciudad_por_defecto'),
               //$this->container->getParameter('cupon.ciudad_por_defecto'),
-              'fechaPublicacion' => new \DateTime('2014-08-18' . '23:59:59')//importante concatenar el time para que sea correcto.
-            //ademas cambiamos en DateTime('today') por la fecha ('2014-08-18') porq en la fecha actual puede que no haya oferta.
+              'fechaPublicacion' => new \DateTime('today'. '23:59:59')
+             // \DateTime('2014-08-18' . '23:59:59')//importante concatenar el time para que sea correcto.
+             //ademas cambiamos en DateTime('today') por la fecha ('2014-08-18') porq en la fecha actual puede que no haya oferta.
         ));
         if (null == $oferta){
             throw $this->createNotFoundException("No se ha encontrado oferta del día en esta ciudad");
@@ -41,8 +42,9 @@ class DefaultController extends Controller
     public function ofertaAction($ciudad, $slug){
         $em = $this->getDoctrine()->getManager();
         $oferta = $em->getRepository('OfertaBundle:Oferta')->findOferta($ciudad, $slug);
+        // El error esta en la linea superior, igual la consulta tiene algun problema.
         return $this->render('OfertaBundle:Default:detalle.html.twig', array(
-            'oferta' => $oferta
+           'oferta' => $oferta
         ));
         //return new Response('Hasa aquí llega la ejecución...');
     }

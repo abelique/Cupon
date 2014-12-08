@@ -45,8 +45,8 @@ class OfertaRepository extends EntityRepository {
             WHERE o.revisada = true
             AND o.slug = :slug
             AND c.slug = :ciudad');
-        $consulta->getParameter('slug', $slug);
-        $consulta->getParameter('ciudad', $ciudad);
+        $consulta->setParameter('slug', $slug);
+        $consulta->setParameter('ciudad', $ciudad);
         $consulta->setMaxResults(1);
         return $consulta->getSingleResult();
     }
@@ -60,8 +60,8 @@ class OfertaRepository extends EntityRepository {
         WHERE o.rutaFoto = :ruta
         AND  c.slug = :ciudad
         ');
-        $consulta->getParameter('ruta', $ruta_foto);
-        $consulta->getParameter('ciudad', $ciudad);
+        $consulta->setParameter('ruta', $ruta_foto);
+        $consulta->setParameter('ciudad', $ciudad);
         return $consulta->getResult();
     }
 

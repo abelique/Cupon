@@ -5,3 +5,9 @@ oferta_homepage:
 tipo_navegador:
     path:     /navegador
     defaults: { _controller: OfertaBundle:Default:tipoNavegador }
+
+oferta:
+    path:  /{ciudad}/ofertas/{slug}
+    defaults: { _controller: OfertaBundle:Default:oferta }
+# Dato importante: esta ruta estaba en: app/config/routing.yml y no funcionaba
+    # se ve que debería estar aquí.
