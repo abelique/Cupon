@@ -246,6 +246,9 @@ Mini-ficha de Oferta
 ======================================================================== */
 .oferta.mini {
     margin: 1em 0 2em;
+    border: solid 3px #899C97;
+    border-radius: 5px;
+    padding: 10px 10px 0 10px;
 }
 .oferta.mini h2 {
     margin-top: 0;

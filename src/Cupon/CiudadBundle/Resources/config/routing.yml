@@ -4,8 +4,15 @@ ciudad_homepage:
 
 ciudad_cambiar:
     pattern:  /ciudad/cambiar-a-{ciudad}
-    defaults: { _controller: CiudadBundle:Default:Cambiar }
+    defaults: { _controller: CiudadBundle:Default:cambiar }
     requirements:
         ciudad: .+
 # Con .+ le indicamos que el nombre de ciudad puede contener cualquier carácter
 
+ciudad_recientes:
+    path: /{ciudad}/recientes
+    defaults: { _controller: CiudadBundle:Default:recientes }
+
+tienda_portada:
+    path: /{ciudad}/tiendas/{tienda}
+    defaults: {_controller: CiudadBundle:Default:portada}

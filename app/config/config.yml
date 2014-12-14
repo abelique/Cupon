@@ -28,6 +28,7 @@ framework:
 # Parameters global configuration
 parameters:
     cupon.ciudad_por_defecto: '1'
+    ruta: '/Public/Cupon/web'
 
 # Twig Configuration
 twig:
@@ -35,6 +36,7 @@ twig:
     strict_variables: "%kernel.debug%"
     globals:
       ciudad_por_defecto: %cupon.ciudad_por_defecto%
+      directorio_imagenes:  %ruta%/uploads/images/
 
 # Assetic Configuration
 assetic:

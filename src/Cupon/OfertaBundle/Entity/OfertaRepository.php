@@ -30,7 +30,6 @@ class OfertaRepository extends EntityRepository {
         $consulta->setParameter('fecha', $fechaPublicacion);
         $consulta->setParameter('ciudad', $ciudad);
         $consulta->setMaxResults(1);
-
         return $consulta->getSingleResult();
     }
 
@@ -63,6 +62,22 @@ class OfertaRepository extends EntityRepository {
         $consulta->setParameter('fecha', new \DateTime('today' . '23:59:59' ));
         $consulta->setParameter('ciudad', $ciudad);
         $consulta->setMaxResults(5);
+        return $consulta->getResult();
+    }
+
+    public function findRecientes($ciudad_id){
+        $em = $this->getEntityManager();
+        $consulta = $em->createQuery('
+            SELECT o
+            FROM OfertaBundle:Oferta o
+            WHERE o.revisada = true
+            AND o.fechaPublicacion <= :fecha
+            AND o.ciudad = :id
+            ORDER BY o.fechaPublicacion DESC
+        ');
+        $consulta->setMaxResults(5);
+        $consulta->setParameter('fecha', new \DateTime('today' . '23:59:59'));
+        $consulta->setParameter('id', $ciudad_id);
         return $consulta->getResult();
     }
 
