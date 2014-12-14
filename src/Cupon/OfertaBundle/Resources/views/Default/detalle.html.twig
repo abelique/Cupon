@@ -11,5 +11,28 @@
     {% endblock %}
 
     {% block aside %}
-        {# ... #}
+
+        {{ parent() }}
+        <section id="relacionadas">
+            <h2>Ofertas en otras ciudades</h2>
+            <ul>
+                {#-- La lista de ofertas que se envia desde el controller --#}
+                {% for oferta in relacionadas %}
+
+                <li>{{ oferta.ciudad.nombre }}:
+                    <p>
+                        {{ oferta.descripcion | truncate(100, true) }}
+                    </p>
+                    <p>
+                        {{ oferta.tienda.descripcion | wordwrap(40) | nl2br }}
+                    </p>
+                    <a href="
+                    {{ path('oferta',{'ciudad': oferta.ciudad.slug, 'slug': oferta.slug}) }}">
+                    {{ oferta.nombre }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+
     {% endblock %}

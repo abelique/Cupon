@@ -1,6 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: services.yml }
 
 framework:
     #esi:             ~
@@ -73,3 +74,19 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# Servicios con Twig primera version -------------------
+# estas son las mas usadas y me sirven para poder usar los filtros: truncate y wordwrap
+# Exportado desde el fichero services.yml
+#services:
+ #   twig.extension.text:
+  #      class: Twig_Extensions_Extension_Text
+   #     tags:
+    #        - { name: twig.extension }
+
+    #twig.extension.debug:
+     #   class: Twig_Extensions_Extension_Debug
+      #  tags:
+       #     - { name: twig.extension }
+
+

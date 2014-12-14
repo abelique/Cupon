@@ -13,8 +13,7 @@ use Doctrine\ORM\EntityRepository;
 
 class OfertaRepository extends EntityRepository {
 
-    public function findOfertaDelDia($ciudad)
-    {
+    public function findOfertaDelDia($ciudad){
         $fechaPublicacion = new \DateTime('Today');
         $fechaPublicacion->setTime(23,59,59);
 
@@ -44,25 +43,28 @@ class OfertaRepository extends EntityRepository {
             JOIN o.tienda t
             WHERE o.revisada = true
             AND o.slug = :slug
-            AND c.slug = :ciudad');
+            AND c.slug = :ciudad ');
         $consulta->setParameter('slug', $slug);
         $consulta->setParameter('ciudad', $ciudad);
         $consulta->setMaxResults(1);
         return $consulta->getSingleResult();
     }
 
-    public function findOfertaRuta($ciudad, $ruta_foto){
+    public function findRelacionadas($ciudad){
         $em = $this->getEntityManager();
-        $consulta = $em->createQuery('SELECT o, c, t
-        FROM OfertaBundle:Oferta o
-        JOIN o.ciudad c
-        JOIN o.tienda t
-        WHERE o.rutaFoto = :ruta
-        AND  c.slug = :ciudad
-        ');
-        $consulta->setParameter('ruta', $ruta_foto);
+        $consulta = $em->createQuery('
+            SELECT o, c
+            FROM OfertaBundle:Oferta o
+            JOIN o.ciudad c
+            WHERE o.revisada = true
+            AND o.fechaPublicacion <= :fecha
+            AND c.slug != :ciudad
+            ORDER BY o.fechaPublicacion DESC ');
+        $consulta->setParameter('fecha', new \DateTime('today' . '23:59:59' ));
         $consulta->setParameter('ciudad', $ciudad);
+        $consulta->setMaxResults(5);
         return $consulta->getResult();
     }
+
 
 } 

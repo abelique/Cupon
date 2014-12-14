@@ -8,10 +8,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
-    {
-        return $this->render('CiudadBundle:Default:index.html.twig', array('name' => $name));
-    }
 
     public function cambiarAction($ciudad){
         return new RedirectResponse($this->generateUrl('portada', array('ciudad' => $ciudad)) );
@@ -26,5 +22,7 @@ class DefaultController extends Controller
                 'ciudadActual'       => $ciudad,
                 'ciudades'     => $ciudades));
     }
+
+
 
 }

@@ -8,3 +8,4 @@ ciudad_cambiar:
     requirements:
         ciudad: .+
 # Con .+ le indicamos que el nombre de ciudad puede contener cualquier carácter
+

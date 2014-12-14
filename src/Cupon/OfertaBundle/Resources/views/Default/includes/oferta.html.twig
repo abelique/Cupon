@@ -4,15 +4,24 @@
         oferta.slug }) }}">{{ oferta.nombre }}
         </a>
     </h1>
-    {{ oferta.descripcion }}
+    {{ oferta.descripcion | mostrar_como_lista }}
     <a class="boton" href="#">Comprar</a>
+</section>
+
+<section class="estado">
+    <div id="tiempo">
+        <stron>Faltan</stron>: {{ oferta.fechaExpiracion | cuenta_atras }}
+    </div>
 </section>
 
 <section class="galeria">
     <img alt="..." src="{{ asset('uploads/images/' ~ oferta.rutaFoto) }}">
-    <p class="precio">{{ oferta.precio }} &euro; <span>{{ oferta.descuento
-            }}</span></p>
-    <p><strong>Condiciones:</strong> {{ oferta.condiciones }}</p>
+    <p class="precio">Precio: {{ oferta.precio }} &euro;
+        <span>Descuento: {{ descuento(oferta.precio, oferta.descuento) }}</span>
+    </p>
+    <p>
+        <strong>Condiciones:</strong> {{ oferta.condiciones }}
+    </p>
 </section>
 
 {# ... #}
