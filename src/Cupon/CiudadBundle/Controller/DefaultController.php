@@ -27,6 +27,9 @@ class DefaultController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         $ciudad = $em->getRepository('CiudadBundle:Ciudad')->findOneBySlug($ciudad);
+        if(!$ciudad){
+            throw $this->createNotFoundException('No existe ciudad');
+        }
         $cercanas = $em->getRepository('CiudadBundle:Ciudad')->findCercanas($ciudad->getId());
         $recientes = $em->getRepository('OfertaBundle:Oferta')->findRecientes($ciudad->getId());
         return $this->render('CiudadBundle:Default:recientes.html.twig', array(
@@ -34,35 +37,6 @@ class DefaultController extends Controller
             'cercanas'  => $cercanas,
             'recientes' => $recientes
         ));
-    }
-
-    public function portadaAction($ciudad, $tienda){
-
-        $em = $this->getDoctrine()->getManager();
-        $ciudad = $em->getRepository('CiudadBundle:Ciudad')->findOneBySlug($ciudad);
-        $tienda = $em->getRepository('TiendaBundle:Tienda')->findOneBy(array(
-            'slug'   => $tienda,
-            'ciudad' => $ciudad->getId()
-        ));
-        if(!$tienda){
-            throw $this->createNotFoundException('Esta tienda no existe!!!');
-        }
-
-        $ofertas = $em->getRepository('TiendaBundle:Tienda')
-            ->findUltimasOfertasPublicadas($tienda->getId());
-
-        $cercanas = $em->getRepository('TiendaBundle:Tienda')->findCercanas(
-            $tienda->getSlug(),
-            $tienda->getCiudad()->getSlug()
-        );
-
-        return $this->render('TiendaBundle:Default:portada.html.twig', array(
-            'tienda'    => $tienda,
-            'ofertas'   => $ofertas,
-            'cercanas'  => $cercanas
-        ));
-
-
     }
 
 }

@@ -1,3 +1,5 @@
-usuario_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: UsuarioBundle:Default:index }
+
+# ruta de compras del usuario
+usuario_compras:
+    path: /compras
+    defaults: { _controller: UsuarioBundle:Default:compras }

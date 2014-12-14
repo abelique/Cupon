@@ -13,6 +13,3 @@ ciudad_recientes:
     path: /{ciudad}/recientes
     defaults: { _controller: CiudadBundle:Default:recientes }
 
-tienda_portada:
-    path: /{ciudad}/tiendas/{tienda}
-    defaults: {_controller: CiudadBundle:Default:portada}
