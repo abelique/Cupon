@@ -1,12 +1,21 @@
 security:
-    providers:
-        in_memory:
-            memory: ~
 
     firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
+        frontend:
+            pattern:      ^/*
+            anonymous:    ~
+            form_login:
+                login_path: /usuario/login # o indicar el nombre de la ruta: usuario_login
+                check_path: /usuario/login_check # o poner: usuario_login_check
 
-        default:
-            anonymous: ~
+    access_control:
+        - { path: ^/usuario/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/usuario/registro, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/usuario/*, roles: ROLE_USUARIO }
+
+    providers:
+        usuarios:
+            entity: { class: Cupon\UsuarioBundle\Entity\Usuario, property: email }
+    encoders:
+        Cupon\UsuarioBundle\Entity\Usuario: { algorithm: sha512, iterations: 10}
+

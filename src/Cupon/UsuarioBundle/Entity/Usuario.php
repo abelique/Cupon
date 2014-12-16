@@ -3,6 +3,8 @@
 namespace Cupon\UsuarioBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\Role\Role;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * Usuario
@@ -11,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Entity(repositoryClass="Cupon\UsuarioBundle\Entity\UsuarioRepository")
  */
-class Usuario
+class Usuario implements UserInterface
 {
     /**
      * @var integer
@@ -396,4 +398,47 @@ class Usuario
         return $this->getNombre() . " ". $this->getApellidos();
     }
 
+    /**
+     * Returns the roles granted to the user.
+     *
+     * <code>
+     * public function getRoles()
+     * {
+     *     return array('ROLE_USER');
+     * }
+     * </code>
+     *
+     * Alternatively, the roles might be stored on a ``roles`` property,
+     * and populated in any number of different ways when the user object
+     * is created.
+     *
+     * @return Role[] The user roles
+     */
+    public function getRoles()
+    {
+        // TODO: Implement getRoles() method.
+        return array('ROLE_USUARIO');
+    }
+
+    /**
+     * Returns the username used to authenticate the user.
+     *
+     * @return string The username
+     */
+    public function getUsername()
+    {
+        // TODO: Implement getUsername() method.
+        return $this->getEmail();
+    }
+
+    /**
+     * Removes sensitive data from the user.
+     *
+     * This is important if, at any given point, sensitive information like
+     * the plain-text password is stored on this object.
+     */
+    public function eraseCredentials()
+    {
+        // TODO: Implement eraseCredentials() method.
+    }
 }//fin de la clase
