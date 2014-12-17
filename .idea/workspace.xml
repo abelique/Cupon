@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35f78a6e-f8eb-4c7a-8e48-c2f857bd533b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/login.html.twig" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/frontend.css" afterPath="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/frontend.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/login.html.twig" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/login.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,12 +34,8 @@
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="24" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-              <folding>
-                <marker date="1418739774426" expanded="true" signature="31:129" placeholder="usuario_compras:" />
-                <marker date="1418739774426" expanded="true" signature="167:260" placeholder="usuario_login:" />
-                <marker date="1418739774426" expanded="true" signature="261:307" placeholder="usuario_login_check:" />
-              </folding>
+            <state line="12" column="24" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="462">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,18 +43,16 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="18" selection-start="1136" selection-end="1136" vertical-scroll-proportion="-19.6" vertical-offset="63" max-vertical-offset="1176">
-              <folding>
-                <element signature="e#50#107#0" expanded="true" />
-              </folding>
+            <state line="31" column="18" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="1176">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="8" selection-start="245" selection-end="245" vertical-scroll-proportion="0.22716346" vertical-offset="0" max-vertical-offset="832">
+            <state line="19" column="51" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="693">
               <folding />
             </state>
           </provider>
@@ -70,7 +61,7 @@
       <file leaf-file-name="cajaLogin.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="446" selection-end="446" vertical-scroll-proportion="-10.5" vertical-offset="0" max-vertical-offset="483">
+            <state line="17" column="46" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="546">
               <folding />
             </state>
           </provider>
@@ -79,7 +70,7 @@
       <file leaf-file-name="frontend.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="21" selection-start="1321" selection-end="1321" vertical-scroll-proportion="-22.633333" vertical-offset="77" max-vertical-offset="966">
+            <state line="36" column="21" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="966">
               <folding />
             </state>
           </provider>
@@ -88,7 +79,25 @@
       <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+            <state line="12" column="2" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="33" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0" vertical-offset="1238" max-vertical-offset="2100">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="35" selection-start="456" selection-end="456" vertical-scroll-proportion="0.4117647" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -97,10 +106,8 @@
       <file leaf-file-name="Usuario.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="434" column="44" selection-start="7566" selection-end="7566" vertical-scroll-proportion="-18.866667" vertical-offset="8548" max-vertical-offset="9450">
-              <folding>
-                <element signature="e#46#78#0" expanded="true" />
-              </folding>
+            <state line="434" column="44" selection-start="7566" selection-end="7566" vertical-scroll-proportion="0.0" vertical-offset="8548" max-vertical-offset="9450">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/Cupon/TiendaBundle/Entity/Tienda.php" />
         <option value="$PROJECT_DIR$/src/Cupon/TiendaBundle/Entity/TiendaRepository.php" />
         <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Entity/OfertaRepository.php" />
-        <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/frontend.css" />
         <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/views/Default/includes/oferta.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Cupon/CiudadBundle/Controller/DefaultController.php" />
@@ -193,20 +199,21 @@
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/compras.html.twig" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend.html.twig" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/frontend.css" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
-    <option name="y" value="52" />
-    <option name="width" value="1044" />
-    <option name="height" value="1028" />
+    <option name="y" value="24" />
+    <option name="width" value="1034" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -481,6 +488,88 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OfertaBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OfertaBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OfertaBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -522,6 +611,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -628,52 +735,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="52" width="1044" height="1028" extended-state="4" />
+    <frame x="57" y="24" width="1034" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31756046" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31744313" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971373" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36464646" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3642857" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31744313" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924336" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31756046" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971373" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36464646" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924336" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -767,11 +852,6 @@
         <state line="29" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="756" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/TiendaBundle/Entity/TiendaRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="50" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="609" max-vertical-offset="1155" />
@@ -795,11 +875,6 @@
     <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/comun.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="23" selection-start="701" selection-end="702" vertical-scroll-proportion="0.33242133" vertical-offset="156" max-vertical-offset="7791" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/frontend.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="22" selection-start="5744" selection-end="5744" vertical-scroll-proportion="0.3080357" vertical-offset="5049" max-vertical-offset="8484" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/oferta/css/frontend.css">
@@ -862,11 +937,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="33" selection-start="1069" selection-end="1069" vertical-scroll-proportion="-1.0101833" vertical-offset="1294" max-vertical-offset="2100" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="24" selection-start="126" selection-end="126" vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="532" />
@@ -894,87 +964,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/views/Default/detalle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="903">
-          <folding />
-        </state>
+        <state line="14" column="22" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="903" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/views/Default/includes/minioferta.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="10" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="903">
-          <folding />
-        </state>
+        <state line="26" column="10" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="903" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/compras.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="469" selection-end="469" vertical-scroll-proportion="0.47297296" vertical-offset="0" max-vertical-offset="888">
-          <folding />
-        </state>
+        <state line="20" column="14" selection-start="469" selection-end="469" vertical-scroll-proportion="0.47297296" vertical-offset="0" max-vertical-offset="888" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/UsuarioRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="376" selection-end="376" vertical-scroll-proportion="0.3310811" vertical-offset="0" max-vertical-offset="888">
-          <folding>
-            <marker date="1418569246865" expanded="true" signature="-1:-1" placeholder="SELECT v, o,..OfertaBundle..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="434" column="44" selection-start="7566" selection-end="7566" vertical-scroll-proportion="-18.866667" vertical-offset="8548" max-vertical-offset="9450">
-          <folding>
-            <element signature="e#46#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <folding>
-            <marker date="1418739774426" expanded="true" signature="31:129" placeholder="usuario_compras:" />
-            <marker date="1418739774426" expanded="true" signature="167:260" placeholder="usuario_login:" />
-            <marker date="1418739774426" expanded="true" signature="261:307" placeholder="usuario_login_check:" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="446" selection-end="446" vertical-scroll-proportion="-10.5" vertical-offset="0" max-vertical-offset="483">
-          <folding />
-        </state>
+        <state line="19" column="23" selection-start="376" selection-end="376" vertical-scroll-proportion="0.3310811" vertical-offset="0" max-vertical-offset="888" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="21" selection-start="1321" selection-end="1321" vertical-scroll-proportion="-22.633333" vertical-offset="77" max-vertical-offset="966">
+        <state line="36" column="21" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="966">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="1136" selection-end="1136" vertical-scroll-proportion="-19.6" vertical-offset="63" max-vertical-offset="1176">
-          <folding>
-            <element signature="e#50#107#0" expanded="true" />
-          </folding>
+        <state line="31" column="18" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="1176">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="24" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="46" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="546">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="245" selection-end="245" vertical-scroll-proportion="0.22716346" vertical-offset="0" max-vertical-offset="832">
+        <state line="19" column="51" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="2" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="434" column="44" selection-start="7566" selection-end="7566" vertical-scroll-proportion="0.0" vertical-offset="8548" max-vertical-offset="9450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/frontend.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="403" column="23" selection-start="9234" selection-end="9234" vertical-scroll-proportion="0.86091125" vertical-offset="7745" max-vertical-offset="8610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="33" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="35" selection-start="456" selection-end="456" vertical-scroll-proportion="0.4117647" vertical-offset="0" max-vertical-offset="765">
           <folding />
         </state>
       </provider>

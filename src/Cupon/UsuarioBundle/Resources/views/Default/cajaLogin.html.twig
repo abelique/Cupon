@@ -3,7 +3,7 @@
 
 <form action="{{ path('usuario_login_check') }}" method="post">
 
-    {% if error is defined %}
+    {% if error is not null %}
         <div>{{ error.message }}</div>
     {% endif %}
 
@@ -13,6 +13,9 @@
 
     <label for="login_pass">Contraseña</label>
     <input id="login_pass" type="password" name="_password" />
+
+    <input type="checkbox" id="remember_me" name="_remember_me" checked/>
+    <label for="remember_me" >No cerrar sesión</label>
 
     <input type="submit" value="Entrar" />
 </form>

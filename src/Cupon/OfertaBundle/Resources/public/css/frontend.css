@@ -397,3 +397,9 @@ Página de login + registro
     text-align: center;
     width: 50%;
 }
+#login_screen {
+    background-color: #868686;
+    padding: 10px;
+    border: solid 2px #00154E;
+    border-radius: 5px;
+}
