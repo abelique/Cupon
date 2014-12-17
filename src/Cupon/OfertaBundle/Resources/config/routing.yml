@@ -11,3 +11,9 @@ oferta:
     defaults: { _controller: OfertaBundle:Default:oferta }
 # Dato importante: esta ruta estaba en: app/config/routing.yml y no funcionaba
     # se ve que debería estar aquí.
+
+
+# Ruta tmp para probar el funcionamiento de los servicios
+nombre_mensaje:
+    path:  /pruebaServicio
+    defaults:  { _controller: OfertaBundle:Default:pruebaServicio }

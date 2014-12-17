@@ -10,6 +10,13 @@ use Symfony\Component\Validator\Constraints\DateTime;
 class DefaultController extends Controller
 {
 
+    public function pruebaServicioAction(){
+        $mensaje = $this->get('cupon.utilidades')->getSaludo('Abelique');
+        return $this->render('OfertaBundle:Default:pruebaServicio.html.twig',array(
+            'mensaje' => $mensaje
+        ));
+    }
+
     public function portadaAction($ciudad)
     {
         $em = $this->getDoctrine()->getManager();

@@ -14,3 +14,8 @@ services:
        class: Cupon\OfertaBundle\Twig\Extension\CuponExtension
        tags:
            - { name: twig.extension }
+
+# servicio de la clase Util para pruebaServicio
+    cupon.utilidades:
+        class:  Cupon\OfertaBundle\Util\Util
+        arguments:  [%kernel.bundles%]

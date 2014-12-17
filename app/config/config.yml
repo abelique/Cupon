@@ -29,6 +29,7 @@ framework:
 parameters:
     cupon.ciudad_por_defecto: '1'
     ruta: '/Public/Cupon/web'
+    cupon.codificacion: 'utf-8'
 
 # Twig Configuration
 twig:
