@@ -166,13 +166,16 @@ class Basico implements FixtureInterface, ContainerAwareInterface
                 $usuario->setNombre('Usuario #'.$numUsuario);
                 $usuario->setApellidos('Apellido1 Apellido2');
                 $usuario->setEmail('usuario'.$numUsuario.'@localhost');
-                $usuario->setSalt('');
-                $usuario->setPassword('password'.$numUsuario);
+                //$usuario->setSalt('');
+                //$usuario->setPassword('password'.$numUsuario);
                 $usuario->setDireccion("Calle Ipsum Lorem, 2\n".$ciudad->getNombre());
                 // El 60% de los usuarios permite email
                 $usuario->setPermiteEmail((rand(1, 1000) % 10) < 6);
                 $usuario->setFechaAlta(new \DateTime('now - '.rand(1, 150).' days'));
                 $usuario->setFechaNacimiento(new \DateTime('now - '.rand(7000, 20000).' days'));
+
+// ESTA LINEA ES MIA PORQUE HAY UN CAMPO ADICIONAL Y NECESITA DATOS 'Ultima_Conexion'
+                $usuario->setUltimaConexion(new \DateTime('now - '.rand(1,15 ).' days'));
 
                 $dni = substr(rand(), 0, 8);
                 $usuario->setDni($dni.substr(
@@ -182,6 +185,18 @@ class Basico implements FixtureInterface, ContainerAwareInterface
 
                 $usuario->setNumeroTarjeta('1234567890123456');
                 $usuario->setCiudad($ciudad);
+
+                /*--------- Solo podria funcionar aqui ya que no me functiona en UsuarioBundle/DF/ORM ---------------*/
+
+                $passwordEnClaro = 'usuario' . $i;
+                $salt = md5(time());
+
+                $encoder = $this->container->get('security.encoder_factory')->getEncoder($usuario);
+                $password = $encoder->encodePassword($passwordEnClaro, $salt);
+
+                $usuario->setPassword($password);
+                $usuario->setSalt($salt);
+                /*---------------------------------------------------------------------------------------------------*/
 
                 $manager->persist($usuario);
             }

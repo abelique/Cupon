@@ -3,7 +3,9 @@
 namespace Cupon\UsuarioBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\SecurityContext;
+use Symfony\Component\Validator\Constraints\Date;
 
 class DefaultController extends Controller
 {
@@ -46,5 +48,20 @@ class DefaultController extends Controller
         return $this->render('UsuarioBundle:Default:compras.html.twig', array('compras' => $compras));
     }
 
+    public function testConexionAction(){
+        $em = $this->getDoctrine()->getManager();
+        $usuario1 = $em->getRepository('UsuarioBundle:Usuario')->find(1);
+
+        $fn = new \DateTime('today');
+        $fn->setTime(00, 00, 00);
+
+        $usuario1->setUltimaConexion($fn);
+        $em->persist($usuario1);
+        $em->flush();
+
+
+        return new Response('Usuario con ID:1 y DNI:  ' );
+
+    }
 
 }

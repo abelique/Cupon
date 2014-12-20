@@ -1,4 +1,11 @@
+{% if is_granted('ROLE_USUARIO') %}
 
+    <p>Conectado como:</p>
+    <h4>{{ app.user }} </h4>
+    <a href="#">Ver mi perfil</a>
+    <a href="{{ path('usuario_logout') }}">Cerrar sesión</a>
+
+{% else %}
 <h2>Accede a tu cuenta</h2>
 
 <form action="{{ path('usuario_login_check') }}" method="post">
@@ -19,3 +26,4 @@
 
     <input type="submit" value="Entrar" />
 </form>
+{% endif %}

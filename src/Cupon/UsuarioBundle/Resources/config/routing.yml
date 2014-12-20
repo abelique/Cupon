@@ -14,3 +14,8 @@ usuario_login_check:
 
 usuario_logout:
     path:   /logout
+
+# testeo del functionamiento de accesores de ultimaConexion campo añadido despues de tener las tablas llenas
+usuario_testConexion:
+    path:   /testConexion
+    defaults: { _controller: UsuarioBundle:Default:testConexion }

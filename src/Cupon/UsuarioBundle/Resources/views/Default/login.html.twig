@@ -5,7 +5,7 @@
 
     {% block article %}
         <section id="login_screen">
-        {% if error is defined %}
+        {% if error is defined and error is not null %}
             <div>{{ error.message }}</div>
         {% endif %}
 

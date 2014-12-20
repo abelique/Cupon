@@ -7,8 +7,13 @@ security:
             form_login:
                 login_path: /usuario/login # o indicar el nombre de la ruta: usuario_login
                 check_path: /usuario/login_check # o poner: usuario_login_check
-                default_target_path:  /usuario/compras
-# Redirigir el usuario a esta ruta despues de loguearse
+                default_target_path:  /usuario/compras # Redirigir el usuario a esta ruta despues de loguearse
+
+            logout:
+                path: usuario_logout # o lo mismo poner la '/usuario/logout'
+                target: /sitio/vuelve-pronto
+
+            switch_user: {role: ROLE_USUARIO}
 
 # Para mantener la sesión abierta durante 3600 segundos
             remember_me:
@@ -24,6 +29,5 @@ security:
         usuarios:
             entity: { class: Cupon\UsuarioBundle\Entity\Usuario, property: email }
     encoders:
-        Cupon\UsuarioBundle\Entity\Usuario: plaintext
-        #{ algorithm: sha512, iterations: 10}
-
+        Cupon\UsuarioBundle\Entity\Usuario: { algorithm: sha512, iterations: 10 }
+        # plaintext

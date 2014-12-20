@@ -450,27 +450,4 @@ class Usuario implements UserInterface
     {
         // TODO: Implement eraseCredentials() method.
     }
-
-    /**
-     * Set ultimaConexion
-     *
-     * @param \DateTime $ultimaConexion
-     * @return Usuario
-     */
-    public function setUltimaConexion($ultimaConexion)
-    {
-        $this->ultimaConexion = $ultimaConexion;
-
-        return $this;
-    }
-
-    /**
-     * Get ultimaConexion
-     *
-     * @return \DateTime 
-     */
-    public function getUltimaConexion()
-    {
-        return $this->ultimaConexion;
-    }
-}
+}//fin de la clase
