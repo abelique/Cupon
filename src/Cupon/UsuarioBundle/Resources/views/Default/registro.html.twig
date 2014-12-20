@@ -6,7 +6,12 @@
 {% block article %}
 
     <h1>{{ block('title') }}</h1>
-        {{ form(formulario) }}
+
+    <form action="{{ path('usuario_registro') }}" method="post" {{ form_enctype(formulario) }} >
+        {{ form_widget(formulario) }}
+        <input class="boton" type="submit" value="Registrame" >
+    </form>
+
 {% endblock %}
 
 {% block aside %}
