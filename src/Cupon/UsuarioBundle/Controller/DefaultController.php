@@ -2,6 +2,7 @@
 
 namespace Cupon\UsuarioBundle\Controller;
 
+use Cupon\UsuarioBundle\Entity\Usuario;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\SecurityContext;
@@ -59,9 +60,18 @@ class DefaultController extends Controller
         $em->persist($usuario1);
         $em->flush();
 
-
         return new Response('Usuario con ID:1 y DNI:  ' );
+    }
 
+    public function registroAction(){
+        $usuario = new Usuario();
+        $formulario = $this->createFormBuilder($usuario)
+            ->add('nombre')
+            ->add('apellidos')
+            ->add('direccion', 'text')
+            ->add('fechaNacimiento', 'date')
+            ->getForm();
+            return $this->render('UsuarioBundle:Default:registro.html.twig',array('formulario' => $formulario->createView()));
     }
 
 }
