@@ -66,8 +66,11 @@ class DefaultController extends Controller
 
     public function registroAction(){
         $usuario = new Usuario();
-        $formulario = $this->createForm(new UsuarioType(), $usuario);
 
+        $usuario->setPermiteEmail(true);
+        $usuario->setFechaNacimiento(new \DateTime('today - 18 years'));
+
+        $formulario = $this->createForm(new UsuarioType(), $usuario);
         return $this->render('UsuarioBundle:Default:registro.html.twig', array(
             'formulario' => $formulario->createView()
         ));

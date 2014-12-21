@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35f78a6e-f8eb-4c7a-8e48-c2f857bd533b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Form/Frontend/UsuarioType.php" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Form/Frontend/UsuarioType.php" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Form/Frontend/UsuarioType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,10 +33,9 @@
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="59" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651">
+            <state line="25" column="59" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="651">
               <folding>
                 <marker date="1419099287200" expanded="true" signature="454:569" placeholder="usuario_testConexion:" />
-                <marker date="1419099287200" expanded="true" signature="611:710" placeholder="usuario_registro:" />
                 <marker date="1419099287200" expanded="true" signature="653:708" placeholder="defaults:" />
               </folding>
             </state>
@@ -47,10 +45,8 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="2510" selection-end="2510" vertical-scroll-proportion="0.8581081" vertical-offset="834" max-vertical-offset="1722">
-              <folding>
-                <element signature="e#50#89#0" expanded="true" />
-              </folding>
+            <state line="79" column="0" selection-start="2625" selection-end="2625" vertical-scroll-proportion="0.8581081" vertical-offset="792" max-vertical-offset="1680">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,7 +54,7 @@
       <file leaf-file-name="UsuarioType.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Form/Frontend/UsuarioType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="5" selection-start="640" selection-end="640" vertical-scroll-proportion="-11.2" vertical-offset="0" max-vertical-offset="693">
+            <state line="25" column="4" selection-start="745" selection-end="745" vertical-scroll-proportion="-12.8" vertical-offset="36" max-vertical-offset="924">
               <folding>
                 <element signature="e#137#177#0" expanded="true" />
               </folding>
@@ -69,25 +65,7 @@
       <file leaf-file-name="registro.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="442" selection-end="442" vertical-scroll-proportion="-11.9" vertical-offset="0" max-vertical-offset="483">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cajaLogin.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="64" selection-start="264" selection-end="264" vertical-scroll-proportion="-5.6" vertical-offset="0" max-vertical-offset="735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="819">
+            <state line="29" column="47" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-16.3" vertical-offset="120" max-vertical-offset="1092">
               <folding />
             </state>
           </provider>
@@ -182,19 +160,19 @@
         <option value="$PROJECT_DIR$/app/Resources/DataFixtures/ORM/Basico.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Form/Frontend/UsuarioType.php" />
-        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
+        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Form/Frontend/UsuarioType.php" />
+        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1863" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -539,7 +517,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
+    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -548,7 +526,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24948454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886598" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20121615" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2039801" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31744313" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -556,11 +534,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924336" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -775,60 +753,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/TiendaBundle/DataFixtures/ORM/Tiendas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/DataFixtures/ORM/Ofertas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="38" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="3696">
-          <folding />
-        </state>
+        <state line="26" column="38" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="3696" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/CiudadBundle/DataFixtures/ORM/Ciudades.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/DataFixtures/ORM/Usuarios.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="41" selection-start="2539" selection-end="2614" vertical-scroll-proportion="1.070946" vertical-offset="288" max-vertical-offset="1554">
-          <folding>
-            <element signature="e#140#190#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="64" column="41" selection-start="2539" selection-end="2614" vertical-scroll-proportion="1.070946" vertical-offset="288" max-vertical-offset="1554" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/DataFixtures/ORM/Basico.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="13" selection-start="7969" selection-end="7969" vertical-scroll-proportion="-16.066668" vertical-offset="3466" max-vertical-offset="5019">
-          <folding />
-        </state>
+        <state line="201" column="13" selection-start="7969" selection-end="7969" vertical-scroll-proportion="-16.066668" vertical-offset="3466" max-vertical-offset="5019" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.3888889" vertical-offset="0" max-vertical-offset="918">
-          <folding />
-        </state>
+        <state line="17" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.3888889" vertical-offset="0" max-vertical-offset="918" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="30" selection-start="894" selection-end="894" vertical-scroll-proportion="0.7091503" vertical-offset="0" max-vertical-offset="2121">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="819">
-          <folding />
-        </state>
+        <state line="31" column="30" selection-start="894" selection-end="894" vertical-scroll-proportion="0.7091503" vertical-offset="0" max-vertical-offset="2121" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml">
@@ -836,15 +791,28 @@
         <state line="25" column="59" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651">
           <folding>
             <marker date="1419099287200" expanded="true" signature="454:569" placeholder="usuario_testConexion:" />
-            <marker date="1419099287200" expanded="true" signature="611:710" placeholder="usuario_registro:" />
             <marker date="1419099287200" expanded="true" signature="653:708" placeholder="defaults:" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="64" selection-start="264" selection-end="264" vertical-scroll-proportion="0.1891892" vertical-offset="0" max-vertical-offset="888">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="416" selection-end="416" vertical-scroll-proportion="0.251634" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Form/Frontend/UsuarioType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="640" selection-end="640" vertical-scroll-proportion="-11.2" vertical-offset="0" max-vertical-offset="693">
+        <state line="25" column="4" selection-start="745" selection-end="745" vertical-scroll-proportion="-12.8" vertical-offset="36" max-vertical-offset="924">
           <folding>
             <element signature="e#137#177#0" expanded="true" />
           </folding>
@@ -853,24 +821,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="442" selection-end="442" vertical-scroll-proportion="-11.9" vertical-offset="0" max-vertical-offset="483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="64" selection-start="264" selection-end="264" vertical-scroll-proportion="-5.6" vertical-offset="0" max-vertical-offset="735">
+        <state line="29" column="47" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-16.3" vertical-offset="120" max-vertical-offset="1092">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2510" selection-end="2510" vertical-scroll-proportion="0.8581081" vertical-offset="834" max-vertical-offset="1722">
-          <folding>
-            <element signature="e#50#89#0" expanded="true" />
-          </folding>
+        <state line="79" column="0" selection-start="2625" selection-end="2625" vertical-scroll-proportion="0.8581081" vertical-offset="792" max-vertical-offset="1680">
+          <folding />
         </state>
       </provider>
     </entry>

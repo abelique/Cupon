@@ -16,9 +16,20 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 class UsuarioType extends AbstractType {
 
     public function buildForm(FormBuilderInterface $builder, array $options){
-        $builder->add('nombre')->add('apellidos')->add('email')->add('password')
-            ->add('direccion')->add('permite_email')->add('fecha_nacimiento')
-            ->add('dni')->add('numero_tarjeta')->add('ciudad');
+        $builder->add('nombre')
+                ->add('apellidos')
+                ->add('email','email')
+                ->add('password', 'repeated', array(
+                'type' => 'password',
+                'invalid_message' => 'Las dos contraseñas no coinciden',
+                'options' =>array('label' => 'Contraseña')
+                ))
+                ->add('direccion')
+                ->add('permite_email', 'checkbox', array('required' => false))
+                ->add('fecha_nacimiento','birthday')
+                ->add('dni')
+                ->add('numero_tarjeta')
+                ->add('ciudad');
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver){
