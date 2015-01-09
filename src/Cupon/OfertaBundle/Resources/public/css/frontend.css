@@ -403,3 +403,13 @@ Página de login + registro
     border: solid 2px #00154E;
     border-radius: 5px;
 }
+/*=========== Código y retoques del ABEL para darle mejor aspecto alformulario  =============*/
+fieldset {
+    border: solid 2px #551a8b;
+    padding: 10px;
+    border-radius: 8px;
+}
+legend {
+    color: #551a8b;
+    text-shadow: 3px 3px 8px blue;
+}

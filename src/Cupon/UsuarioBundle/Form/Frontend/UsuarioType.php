@@ -25,7 +25,7 @@ class UsuarioType extends AbstractType {
                 'options' =>array('label' => 'Contraseña')
                 ))
                 ->add('direccion')
-                ->add('permite_email', 'checkbox', array('required' => false))
+                ->add('permite_email', 'checkbox', array('required' => true))
                 ->add('fecha_nacimiento','birthday')
                 ->add('dni')
                 ->add('numero_tarjeta')

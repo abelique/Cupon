@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\Validator\Constraints\Date;
+use Symfony\Component\Validator\Constraints\Time;
 
 class DefaultController extends Controller
 {
@@ -64,7 +65,7 @@ class DefaultController extends Controller
         return new Response('Usuario con ID:1 y DNI:  ' );
     }
 
-    public function registroAction(){
+    public function ant_registroAction(){
         $usuario = new Usuario();
 
         $usuario->setPermiteEmail(true);
@@ -74,6 +75,44 @@ class DefaultController extends Controller
         return $this->render('UsuarioBundle:Default:registro.html.twig', array(
             'formulario' => $formulario->createView()
         ));
+    }
+
+    public function registroAction(){
+        $peticion = $this->getRequest();
+        $usuario = new Usuario();
+
+        $formulario = $this->createForm(new UsuarioType(), $usuario);
+        $formulario->handleRequest($peticion);
+
+        if($formulario->isValid()){
+
+            $encoder = $this->get('security.encoder_factory')->getEncoder($usuario);
+
+            $fechaUltimaConexion = new \DateTime('today');
+            $fechaUltimaConexion->setTime(11,00,00); //Habrá que encontrar la manera de saber hora actual desde el request
+
+            $usuario->setUltimaConexion($fechaUltimaConexion);  //new \DateTime('today'));
+            $usuario->setSalt( md5(time()) );
+            $passwordCodificado = $encoder->encodePassword( $usuario->getPassword(), $usuario->getSalt() );
+            $usuario->setPassword($passwordCodificado);
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($usuario);
+            $em->flush();
+
+            // Asignar un mensaje flash con información
+            $this->get('session')->getFlashBag()->add('info', '¡Enhorabuena! Te has registrado correctamente en Cupon');
+
+            return $this->redirect($this->generateUrl('portada', array(
+                'ciudad' => $usuario->getCiudad()->getSlug()
+
+            )));
+        }
+        return $this->render('UsuarioBundle:Default:registro.html.twig', array(
+            'formulario' => $formulario->createView()
+        ));
+
+
     }
 
 }

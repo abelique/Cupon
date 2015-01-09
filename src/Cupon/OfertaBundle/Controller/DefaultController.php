@@ -5,16 +5,27 @@ namespace Cupon\OfertaBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Validator\Constraints\Date;
 use Symfony\Component\Validator\Constraints\DateTime;
 
 class DefaultController extends Controller
 {
 
+    // Funciónes para realizar pruebas puntuales
+    // Funcionamiento de los servicios
     public function pruebaServicioAction(){
         $mensaje = $this->get('cupon.utilidades')->getSaludo('Abelique');
         return $this->render('OfertaBundle:Default:pruebaServicio.html.twig',array(
             'mensaje' => $mensaje
         ));
+    }
+    // Funcionamiento de Time para obtener hora min, etc
+    public function pruebaTimeAction(){
+        $tiempo = new \DateTime('now');
+        $peticion = $this->getRequest()->server->get('REQUEST_TIME');;
+        //return new Response($peticion . ' Y LA FECHA ES: ' . $tiempo->getOffset());
+        return new Response('la hora actual sería: ' . ($peticion/$tiempo->getOffset())%24);
+        //return new Response($tiempo[0]);
     }
 
     public function portadaAction($ciudad)

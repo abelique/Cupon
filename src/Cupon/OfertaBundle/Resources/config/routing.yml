@@ -17,3 +17,7 @@ oferta:
 nombre_mensaje:
     path:  /pruebaServicio
     defaults:  { _controller: OfertaBundle:Default:pruebaServicio }
+
+prueba_tiempo:
+    path: /pruebaTime
+    defaults: { _controller: OfertaBundle:Default:pruebaTime }

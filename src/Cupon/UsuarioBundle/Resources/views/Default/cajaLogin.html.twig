@@ -11,7 +11,7 @@
 
 <form action="{{ path('usuario_login_check') }}" method="post">
 
-    {% if error is not null %}
+    {% if error is defined and null %}
         <div>{{ error.message }}</div>
     {% endif %}
 
