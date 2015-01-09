@@ -1,5 +1,9 @@
 {% if is_granted('ROLE_USUARIO') %}
 
+    {% for mensaje in app.session.flashbag.get('info') %}
+        <p class="info">{{ mensaje }}</p>
+    {% endfor %}
+
     <p>Conectado como:</p>
     <h4>{{ app.user }} </h4>
     <a href="#">Ver mi perfil</a>

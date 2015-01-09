@@ -6,6 +6,7 @@ use Cupon\UsuarioBundle\Entity\Usuario;
 use Cupon\UsuarioBundle\Form\Frontend\UsuarioType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 use Symfony\Component\Security\Core\SecurityContext;
 use Symfony\Component\Validator\Constraints\Date;
 use Symfony\Component\Validator\Constraints\Time;
@@ -103,6 +104,16 @@ class DefaultController extends Controller
             // Asignar un mensaje flash con información
             $this->get('session')->getFlashBag()->add('info', '¡Enhorabuena! Te has registrado correctamente en Cupon');
 
+            // Loguear al usuario con la función UsernamePasswordToken()
+            $token = new UsernamePasswordToken(
+                $usuario,
+                $usuario->getPassword(),
+                'frontend',
+                $usuario->getRoles()
+            );
+            $this->container->get('security.context')->setToken($token);
+
+            // Al final lo redirigimos
             return $this->redirect($this->generateUrl('portada', array(
                 'ciudad' => $usuario->getCiudad()->getSlug()
 
