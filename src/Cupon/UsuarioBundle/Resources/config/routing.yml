@@ -24,3 +24,7 @@ usuario_testConexion:
 usuario_registro:
     path: /registro
     defaults: { _controller: UsuarioBundle:Default:registro }
+
+usuario_perfil:
+    path: /perfil
+    defaults: { _controller: UsuarioBundle:Default:perfil }

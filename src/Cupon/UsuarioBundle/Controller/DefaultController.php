@@ -122,7 +122,34 @@ class DefaultController extends Controller
         return $this->render('UsuarioBundle:Default:registro.html.twig', array(
             'formulario' => $formulario->createView()
         ));
+    }
 
+    public function perfilAction(){
+
+        $usuario = $this->get('security.context')->getToken()->getUser();
+        $formulario = $this->createForm(new UsuarioType(), $usuario);
+
+        $peticion = $this->getRequest();
+        $passwordOriginal = $formulario->getData()->getPassword();
+        $formulario->handleRequest($peticion);
+
+        if($formulario->isValid()){
+            // Operación de post para update del perfíl de usuario
+            if(null == $usuario->getPassword()){
+                $usuario->setPassword($passwordOriginal);
+            }else{
+                $encoder = $this->get('security.encoder_factory')->getEncoder($usuario);
+                $passCodificado = $encoder->encodePassword($usuario->getPassword(), $usuario->getSalt());
+                $usuario->setPassword($passCodificado);
+            }
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($usuario);
+            $em->flush();
+        }
+        return $this->render('UsuarioBundle:Default:perfil.html.twig', array(
+            'usuario'    => $usuario,
+            'formulario' => $formulario->createView()
+        ));
 
     }
 

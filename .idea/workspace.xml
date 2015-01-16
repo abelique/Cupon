@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35f78a6e-f8eb-4c7a-8e48-c2f857bd533b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/perfil.html.twig" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cupon.iws" />
@@ -29,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Usuario.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Usuario.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="501" column="5" selection-start="10005" selection-end="10005" vertical-scroll-proportion="0.5743243" vertical-offset="10011" max-vertical-offset="10899">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="48.3" vertical-offset="1449" max-vertical-offset="10899">
               <folding>
                 <element signature="e#46#78#0" expanded="true" />
               </folding>
@@ -40,10 +42,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registro.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="47" selection-start="827" selection-end="827" vertical-scroll-proportion="-13.1" vertical-offset="111" max-vertical-offset="1029">
+            <state line="26" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="146" column="25" selection-start="5534" selection-end="5534" vertical-scroll-proportion="0.6925676" vertical-offset="2304" max-vertical-offset="3255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perfil.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/perfil.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="36" selection-start="223" selection-end="223" vertical-scroll-proportion="-4.9" vertical-offset="0" max-vertical-offset="1239">
               <folding />
             </state>
           </provider>
@@ -91,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Cupon/CiudadBundle/DataFixtures/ORM/Ciudades.php" />
         <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/DataFixtures/ORM/Ofertas.php" />
         <option value="$PROJECT_DIR$/src/Cupon/TiendaBundle/DataFixtures/ORM/Tiendas.php" />
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
@@ -131,17 +150,18 @@
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/DataFixtures/ORM/Usuarios.php" />
         <option value="$PROJECT_DIR$/app/Resources/DataFixtures/ORM/Basico.php" />
-        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/frontend.css" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Form/Frontend/UsuarioType.php" />
         <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/views/Default/portada.html.twig" />
-        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
-        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig" />
         <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php" />
+        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig" />
+        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/perfil.html.twig" />
+        <option value="$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -339,7 +359,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsuarioBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cupon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsuarioBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -507,21 +583,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cupon/TiendaBundle/Entity/Tienda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="74" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="5838" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/Entity/OfertaRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="36" selection-start="908" selection-end="908" vertical-scroll-proportion="-0.5683544" vertical-offset="995" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/public/css/comun.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="701" selection-end="702" vertical-scroll-proportion="0.33242133" vertical-offset="156" max-vertical-offset="7791" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/oferta/css/frontend.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="249" column="17" selection-start="5763" selection-end="5764" vertical-scroll-proportion="0.3409091" vertical-offset="4959" max-vertical-offset="8484" />
@@ -617,11 +678,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1176" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Listener/LoginListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.6216216" vertical-offset="120" max-vertical-offset="1008" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/OfertaBundle/Resources/views/Sitio/vuelve-pronto.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.1418919" vertical-offset="0" max-vertical-offset="888" />
@@ -707,11 +763,6 @@
         <state line="9" column="27" selection-start="306" selection-end="306" vertical-scroll-proportion="0.21235955" vertical-offset="0" max-vertical-offset="890" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="181" selection-end="181" vertical-scroll-proportion="0.16516854" vertical-offset="0" max-vertical-offset="890" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/logs/prod.log">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -730,16 +781,6 @@
         <state line="11" column="7" selection-start="416" selection-end="416" vertical-scroll-proportion="0.25955057" vertical-offset="0" max-vertical-offset="890" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="40" selection-start="4079" selection-end="4079" vertical-scroll-proportion="0.0" vertical-offset="1744" max-vertical-offset="2835" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="38" selection-start="525" selection-end="525" vertical-scroll-proportion="-11.9" vertical-offset="0" max-vertical-offset="819" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918" />
@@ -755,19 +796,68 @@
         <state line="11" column="14" selection-start="298" selection-end="298" vertical-scroll-proportion="0.3743922" vertical-offset="0" max-vertical-offset="617" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/registro.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="47" selection-start="827" selection-end="827" vertical-scroll-proportion="-13.1" vertical-offset="111" max-vertical-offset="1029">
+        <state line="15" column="48" selection-start="501" selection-end="501" vertical-scroll-proportion="0.22972973" vertical-offset="111" max-vertical-offset="1029">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/cajaLogin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.02364865" vertical-offset="0" max-vertical-offset="888">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/DependencyInjection/UsuarioExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Listener/LoginListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="5" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.6554054" vertical-offset="27" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Resources/views/Default/perfil.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="223" selection-end="223" vertical-scroll-proportion="-4.9" vertical-offset="0" max-vertical-offset="1239">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Entity/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="501" column="5" selection-start="10005" selection-end="10005" vertical-scroll-proportion="0.5743243" vertical-offset="10011" max-vertical-offset="10899">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="48.3" vertical-offset="1449" max-vertical-offset="10899">
           <folding>
             <element signature="e#46#78#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cupon/UsuarioBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="25" selection-start="5534" selection-end="5534" vertical-scroll-proportion="0.6925676" vertical-offset="2304" max-vertical-offset="3255">
+          <folding />
         </state>
       </provider>
     </entry>
