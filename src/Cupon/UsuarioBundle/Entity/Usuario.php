@@ -5,6 +5,9 @@ namespace Cupon\UsuarioBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\Role\Role;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Context\ExecutionContext;
+use Symfony\Bridge\Doctrine\Validator\Constraints as DoctrineAssert;
 
 /**
  * Usuario
@@ -12,9 +15,12 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\Table()
  * @ORM\Entity
  * @ORM\Entity(repositoryClass="Cupon\UsuarioBundle\Entity\UsuarioRepository")
+ * @Assert\Callback(methods={"esDniValido"})
+ * @DoctrineAssert\UniqueEntity("email")
  */
 class Usuario implements UserInterface
 {
+// ----------------  DoctrineAssert\UniqueEntity("dni", message="Dni ya registrado!!!")  ---------------//
     /**
      * @var integer
      *
@@ -28,6 +34,7 @@ class Usuario implements UserInterface
      * @var string
      *
      * @ORM\Column(name="nombre", type="string", length=100)
+     * @Assert\NotBlank()
      */
     protected $nombre;
 
@@ -42,6 +49,7 @@ class Usuario implements UserInterface
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255)
+     * @Assert\Email()
      */
     protected $email;
 
@@ -49,6 +57,7 @@ class Usuario implements UserInterface
      * @var string
      *
      * @ORM\Column(name="password", type="string", length=255)
+     * @Assert\Length(min=6, minMessage="la contraseña debe tener un mínimo de {{ limit }} carácteres")
      */
     protected $password;
 
@@ -473,4 +482,32 @@ class Usuario implements UserInterface
     {
         return $this->ultimaConexion;
     }
-}
+// ------------------------------- validación del dni --------------------------------  //
+    public function esDniValido(ExecutionContext $context){
+        $dni = $this->getDni();
+        // Comprobar que el formato sea correcto
+        if (0 === preg_match("/\d{1,8}[a-z]/i", $dni)) {
+            $context->addViolationAt('dni', 'El DNI introducido no tiene el
+                        formato correcto (entre 1 y 8 números seguidos de una letra, sin guiones y sin
+                        dejar ningún espacio en blanco)', array(), null);
+            return;
+        }
+        // Comprobar que la letra cumple con el algoritmo
+        $numero = substr($dni, 0, -1);
+        $letra = strtoupper(substr($dni, -1));
+        if ($letra != substr("TRWAGMYFPDXBNJZSQVHLCKE", strtr($numero, "XYZ", "012")%23, 1)) {
+            $context->addViolationAt('dni', 'La letra no coincide con el número
+                        del DNI. Comprueba que has escrito bien tanto el número como la letra', array(), null);
+        }
+    }
+//  ------------------------------- validación de mayoría de edad con el metodo ad-hoc -----------------------------  //
+
+    /**
+     * @Assert\True(message="Debes tener al menos 18 años.")
+     **/
+    public function isMayorDeEdad(){
+        return $this->fechaNacimiento <= new \DateTime('today - 18 years');
+    }
+
+
+}//fin de la clase

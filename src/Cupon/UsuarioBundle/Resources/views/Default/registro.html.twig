@@ -7,7 +7,7 @@
 
     <h1>{{ block('title') }}</h1>
 
-    <form action="{{ path('usuario_registro') }}" method="post" {{ form_enctype(formulario) }} >
+    <form novalidate="novalidate" action="{{ path('usuario_registro') }}" method="post" {{ form_enctype(formulario) }} >
         {{ form_errors(formulario) }}
 
         <fieldset>
